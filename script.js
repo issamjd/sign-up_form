@@ -18,6 +18,10 @@ $(function(){
 
     $("#toggle-mode").click(function(){
         $("body").toggleClass("dark-mode");
+        $(".firstform").toggleClass("firstform-dark");
+        $("#submitBtn").toggleClass("submitBtn-dark")
+
+        
     })
 
 })

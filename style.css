@@ -1,6 +1,8 @@
 *{
     padding: 0%;
     margin: 0%;
+    font-family: sans-serif;
+    font-size: 1.1rem;
 }
 
 body {
@@ -32,7 +34,17 @@ body.dark-mode {
 }
 .formContainer{
     width: 65vw;
-    height: 100vh;
+    padding: 10vh 0 10vh 0;
+}
+.formContainer > p{
+    padding: 0 3.5vw 0 3.5vw;
+    font-weight: 600;
+}
+.formContainer>p:first-child{
+    margin-bottom: 2.5vh;
+}
+.formContainer>p:nth-child(2){
+    margin-bottom: 5vh;
 }
 .backgroundContainer > .textOverlay{
     position:absolute;
@@ -43,10 +55,92 @@ body.dark-mode {
     top: 60vh;
     padding: 2vh 0 2vh 0;
 }
+h1{
+    font-size: 2rem;
+}
 
-input:invalid{
+input{
+    border-radius: 5px;
+    box-shadow: none;
+    border: lightgray 1px solid;
+    padding: 5px;
+    margin: 0 5vw 2.5vh 0;
+    font-size: 0.9rem;
+}
+input:focus{
+    outline-color: var(--color);
+}
+/* input:invalid{
     border-color: red;
 }
 input:valid{
     border-color: green;
+} */
+
+label{
+    display: block;
+}
+fieldset:first-child{
+    display: flex;
+    flex-wrap: wrap;
+    border: none; 
+}
+#signupform > fieldset{
+    padding: 2.5vh 3.5vw 2.5vh 3.5vw;
+    border: none;
+}
+.firstform{
+    background-color: rgb(230, 230, 230);
+    padding: 2.5vh 3.5vw 2.5vh 3.5vw;
+}
+.firstform-dark{
+    background-color: #3a3a3a;
+    padding: 2.5vh 3.5vw 2.5vh 3.5vw;
+}
+fieldset>legend{
+    font-weight: 900;
+    margin-bottom: 1vh;
+}
+a{
+    text-decoration: none;
+    color: var(--color);
+}
+#submitBtn{
+    background-color:#3a3a3a;
+    border-color: var(--color);
+    border-radius: 5px;
+    color: var(--color);
+    padding: 1%;
+}
+#submitBtn:hover{
+    background-color: var(--color);
+    color:#333;
+    cursor: pointer;
+}
+
+.submitBtn-dark{
+    background-color:#333;
+    border-color: var(--color);
+    color: var(--color);
+}
+
+.togglemode >button{
+    background-color:var(--color);
+    border-color: var(--color);
+    border-radius: 5px;
+    color:#f0f0f0;
+    padding: 2%;
+    font-size: 0.9rem;
+    width: max-content;
+}
+.togglemode > button:hover{
+    background-color:#333;
+    color:var(--color);
+    cursor: pointer;
+}
+.togglemode{
+    position: absolute;
+    top: 96vh;
+    left: 14vw;
+    
 }

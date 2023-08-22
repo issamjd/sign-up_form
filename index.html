@@ -13,50 +13,53 @@
         <div class="backgroundContainer">
             
             <div class="textOverlay">
-                <h1>Odin Project</h1>
+                <h1>ODIN PROJECT</h1>
             </div>
             <div class="togglemode">
                 <button id="toggle-mode" > Toggle Mode</button>
-
             </div>
         </div>
         <div class="formContainer">
+
             <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. 
                 Sign up <em>now</em> to get started 
             </p>
             <p>You <em>know</em> you want to.</p>
-            <form action="">
-                <fieldset>
 
-                    <legend>Let's do this!</legend>
+            <form id="signupform" action="" method="post">
+                <div class="firstform">
+                    <fieldset>
 
-                    <div class="input">
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="first_name" maxlength="35" required>
-                    </div>
-                    <div class="input">
-                        <label for="lastname">Last Name</label>
-                        <input type="text" id="lastname" name="last_name" maxlength="35">
-                    </div>
-                    <div class="input">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="input">
-                        <label for="phoneNumber">Phone Number</label>
-                        <input type="text" id="phoneNumber" name="phone_number" minlength="8" maxlength="25" pattern="([0-9]|[\-+#])+">
-                    </div>
-                    <div class="input">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" minlength="2" maxlength="25" required>
-                        <p id="submResult"></p>
-                    </div>
-                    <div class="input">
-                        <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" id="confirmPassword" name="confirm_password" minlength="2" maxlength="25" required>
-                   </div>
+                        <legend>Let's do this!</legend>
 
-                </fieldset>
+                        <div class="input">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="first_name" maxlength="35" required>
+                        </div>
+                        <div class="input">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" name="last_name" maxlength="35">
+                        </div>
+                        <div class="input">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="text" id="phoneNumber" name="phone_number" minlength="8" maxlength="25" pattern="([0-9]|[\-+#])+">
+                        </div>
+                        <div class="input">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" minlength="2" maxlength="25" required>
+                            <p id="submResult"></p>
+                        </div>
+                        <div class="input">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirm_password" minlength="2" maxlength="25" required>
+                    </div>
+
+                    </fieldset>
+                </div>
 
                 <fieldset>
                     <button id="submitBtn" type="submit">Create Account</button>
